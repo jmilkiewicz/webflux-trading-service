@@ -26,7 +26,5 @@ public class UsersCommandLineRunner implements CommandLineRunner {
                 new TradingUser("jajor", "Jedrzej Klobukowski")
         );
         tradingUserRepository.insert(tradingUsers).then().block();
-
-        tradingUserRepository.findAll().subscribe(System.out::println);
     }
 }
